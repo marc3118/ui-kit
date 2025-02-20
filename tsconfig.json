@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "lib": ["DOM", "ESNext"],
+    "jsx": "react",
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+
+    // Where compiled .d.ts files go
+    "declaration": true,
+    "declarationDir": "dist",
+    // We do NOT emit compiled JS here since Webpack handles that.
+    "emitDeclarationOnly": false,
+
+    // Avoid conflicts with Webpack's output by specifying a different outDir for type files if needed
+    "outDir": "dist/types"
+  },
+  "include": [
+    "src"
+  ]
+}
